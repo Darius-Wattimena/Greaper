@@ -8,14 +8,3 @@ var sound = new Howl({
 function run() {
 	sound.play();
 }
-
-function initBlink()
-{
-    var state = false;
-    setInterval(function()
-        {
-            state = !state;
-            var color = (state?'red':'green');
-            document.getElementById('test').style.color = color;
-        }, 100);
-}
