@@ -9,21 +9,13 @@ function run() {
 	sound.play();
 }
 
-var x;
-
-function changecolors() {
-    x = 1;
-    setInterval(change, 1000);
-}
-
-function change() {
-    if (x === 1) {
-        color = "red";
-        x = 2;
-    } else {
-        color = "green";
-        x = 1;
-    }
-
-    document.body.style.background = color;
+function initBlink()
+{
+    var state = false;
+    setInterval(function()
+        {
+            state = !state;
+            var color = (state?'red':'green');
+            document.getElementById('test').style.color = color;
+        }, 100);
 }
