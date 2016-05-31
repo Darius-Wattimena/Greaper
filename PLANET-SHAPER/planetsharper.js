@@ -1,6 +1,9 @@
 var sound = new Howl({
-  urls: ['audio/PlanetSharper.mp3']
+  urls: ['audio/PlanetSharper.mp3'],
+  onload: run,
   loop: true,
 })
 
-sound.play();
+function run() {
+	sound.play();
+}
