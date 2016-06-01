@@ -7,4 +7,5 @@ var sound = new Howl({
 
 function run() {
 	sound.play();
+	window.alert("Test");
 }
