@@ -1,7 +1,8 @@
 var sound = new Howl({
-  urls: ['https://dl.dropbox.com/s/62l4s67x6gd81jg/loop.mp3'],
-  html5: true,
-  autoplay: true,
+  urls: ['loop.mp3', 'loop.wav'],
+  preload: true,
   loop: true,
   volume: 0.2,
 })
+
+sound.play();
