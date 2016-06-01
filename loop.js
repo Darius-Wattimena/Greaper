@@ -1,8 +1,8 @@
 var sound = new Howl({
-  urls: ['audio/Loop.mp3'],
+  urls: ['loop.mp3'],
   onload: run,
   loop: true,
-  volume: 0.1,
+  volume: 0.2,
 })
 
 function run() {
